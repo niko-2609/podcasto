@@ -10,3 +10,4 @@ const FavoritScreen = () => {
 }
 
 export default FavoritScreen;
+
