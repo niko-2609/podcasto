@@ -20,18 +20,18 @@ const Tab = createBottomTabNavigator();
             color: "#D6E0F0"
           },
         tabBarStyle: {
-          backgroundColor: 'transparent',
+          backgroundColor: '#171717',
           position: 'absolute',
           borderRadius: 8,
           paddingHorizontal: 7,
           elevation: 0,
           shadowOpacity: 0,
           borderTopWidth: 0,
-          marginBottom: 10
+          marginBottom: 0,
+          height:85
         },
         tabBarLabelStyle: {
             fontSize: 13,
-            marginBottom: 3
         },
         tabBarActiveTintColor: "#EDEDED",
         tabBarInactiveTintColor: "gray",

@@ -1,11 +1,12 @@
-import { View, Text, SafeAreaView, StyleSheet, ImageBackground, Image } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import Constants from 'expo-constants';
 import CustomIcon from '../components/UI/CustomIcon';
+import TopPodcasts from '../components/TopPodcasts/TopPodcasts';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.root}>
+    <ScrollView style={styles.root}>
       <View style={styles.iconContainer}>
        <View style={styles.iconCover}>
        <CustomIcon icon="add-alert" size={32}/>
@@ -25,7 +26,10 @@ const HomeScreen = () => {
                   <Text style={styles.text}>podcast everyday</Text>
               </View>
       </View>
-    </SafeAreaView>
+      <View>
+      <TopPodcasts />
+      </View>
+    </ScrollView>
   )
 }
 
